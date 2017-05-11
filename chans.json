@@ -1,0 +1,8 @@
+{
+	"slack": {
+		"SLACK_CHANNEL_ID": "DISCORD_CHANNEL_ID",
+	},
+	"discord": {
+		"DISCORD_CHANNEL_ID": "SLACK_CHANNEL_ID",
+	}
+}

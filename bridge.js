@@ -1,5 +1,5 @@
 var slackAPI		= require('slackbotapi'),
-	sToken			= 'SLACK_BOT_API_KEY',
+	sToken			= 'SLACK_BOT_KEY',
 	dToken			= 'DISCORD_BOT_TOKEN',
 	sTeam			= 'SLACK_TEAM_ID',
 	dGuild			= 'DISCORD_GUILD_ID',
@@ -81,7 +81,7 @@ function msgParser(e) {
 
 	// Set our stuff
 	var uname = e.message.author.username;
-	if (e.message.author.id === 'DISCORD_BOT_UID') return;
+	if (e.message.author.id === 'DISCORD_BOT_ID') return;
 	var dAvatar = '';
 	if (e.message.author.avatar !== null) {
 		dAvatar = 'https://discordapp.com/api/users/' + e.message.author.id + '/avatars/' + e.message.author.avatar + '.jpg';

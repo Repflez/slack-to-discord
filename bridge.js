@@ -118,6 +118,6 @@ client.Dispatcher.on('GATEWAY_READY', function (e) {
 	console.log('discord is ready');
 	client.Dispatcher.on('MESSAGE_CREATE', msgParser);
 });
-slack.on('hello', function () => {
+slack.on('hello', function () {
 	console.log('slack is ready');
 });
